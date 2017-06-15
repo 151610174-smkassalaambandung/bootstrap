@@ -17,25 +17,25 @@
                    </div>
                    </div>
 
-                    <div class="form-group{{$errors->has('name')?'has-error':''}}">
-                   {!!Form::label('name','name',['class'=>'col-md-4 control-label'])!!}
+                    <div class="form-group{{$errors->has('email')?'has-error':''}}">
+                   {!!Form::label('name','email',['class'=>'col-md-4 control-label'])!!}
                    <div class="col-md-6">
-                   {!!Form::email('name',null,['class'=>'form-control'])!!}
-                   {!!$errors->first('name','<p class="help-block">:message</p>')!!}
+                   {!!Form::email('email',null,['class'=>'form-control'])!!}
+                   {!!$errors->first('email','<p class="help-block">:message</p>')!!}
                    </div>
                    </div>
 
-                   <div class="form-group{{$errors->has('password') ? 'has-error' :''}}">
-                    {!!Form::label('password','password',['class'=>'col=md-4 control-label'])!!}
-                    <div class="col-md-6">
-
-                    {!!Form::password('password',['class'=>'form-control'])!!}
-                    {!!$errors->first('password','<p class="help-block">:message</p>')!!}
-                    </div>
-                    </div>
+                   
+                    <div class="form-group{{$errors->has('password')?'has-error':''}}">
+                   {!!Form::label('password','Password',['class'=>'col-md-4 control-label'])!!}
+                   <div class="col-md-6">
+                   {!!Form::password('password',['class'=>'form-control'])!!}
+                   {!!$errors->first('password','<p class="help-block">:message</p>')!!}
+                   </div>
+                   </div>
 
                 <div class="form-group{{$errors->has('password_confirmation')?'has-error':''}}">
-                {!!Form::label('password_confirmation','konfirmasi password',['class'=>'col-md-4 control\label'])!!}
+                {!!Form::label('password_confirmation','konfirmasi password',['class'=>'col-md-4 control-label'])!!}
                 <div class="col-md-6">
                 {!!Form::password('password_confirmation',['class'=>'form-control'])!!}
                 {!!$errors->first('pasword_confirmation','<p class="help-block">:message</p>')!!}
@@ -45,7 +45,7 @@
                 <div class="form-group">
                 <div class="col-md-6 col-md-offset-4">
                 <button type="submit" class="btn btn-primary">
-                <i class="fa fa-btn fa-user"></i> dafrar
+                <i class="fa fa-btn fa-user"></i> daftar
                 </button>
                 </div>
                 </div>
