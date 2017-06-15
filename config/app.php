@@ -137,6 +137,8 @@ return [
 
     'providers' => [
 
+
+
         /*
          * Laravel Framework Service Providers...
          */
@@ -162,6 +164,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        
 
         /*
          * Package Service Providers...
@@ -180,6 +183,7 @@ return [
 
     //add on
         Collective\Html\HtmlServiceProvider::class,
+        Laratrust\LaratrustServiceProvider::class,
     ],
 
     /*
@@ -230,6 +234,7 @@ return [
 //add on
         'Form' =>Collective\Html\FormFacade::class,
         'Html' =>Collective\Html\HtmlFacade::class,
+        'Laratrust' =>Laratrust\LaratrustFacade::class,
     ],
 
 ];

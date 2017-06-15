@@ -11,8 +11,9 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
-
+    <link href="{{asset('/css/app.css')}}" rel="stylesheet">
+    <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet">
+     <link href="{{asset('/css/font-awesome.min.css')}}" rel="stylesheet">
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -21,8 +22,8 @@
     </script>
 </head>
 <body>
-    @include('layouts.menu' )
-    @include('layouts.profil' )
+   <center> @include('layouts.menu' )</center>
+    <center>@include('layouts.profil' )</center>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -84,7 +85,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <script src="{{asset('/js/app.js')}}"></script>
+    <!-- Scripts --script src="{{asset('/js/bootstrap.min.js')}}"></script>
 
 </body>
 </html>
