@@ -11,7 +11,9 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{asset('/css/app.css')}}" rel="stylesheet">
+ <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/jquery.datatables.css" rel="stylesheet">
+    <link href="/css/datatables.bootstrap.css" rel="stylesheet">
     <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet">
      <link href="{{asset('/css/font-awesome.min.css')}}" rel="stylesheet">
     <!-- Scripts -->
@@ -46,6 +48,12 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
+                    @if (Auth::check())
+                    <li> <a href="{{url('/home')}}">Dashboard</a></li>
+                    <li> <a href="{{route('authors.index')}}">penulis</a></li>
+
+                    @endif
+                    </ul>
                         &nbsp;
                     </ul>
 
@@ -86,7 +94,12 @@
 
     <!-- Scripts -->
     <script src="{{asset('/js/app.js')}}"></script>
+    <scrip src="/js/jquery.dataTables.min.js"></scrip>
+    <scrip src="/js/dataTables.bootstrap.min.js"></scrip>
+    @yield('scripts')
     <!-- Scripts --script src="{{asset('/js/bootstrap.min.js')}}"></script>
+
+<scrip src="/js/jquery.dataTables.min.js"></scrip>
 
 </body>
 </html>

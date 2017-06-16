@@ -164,6 +164,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+
         
 
         /*
@@ -180,10 +181,12 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        
 
     //add on
         Collective\Html\HtmlServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
+ Yajra\Datatables\DatatablesServiceProvider::class,
     ],
 
     /*
@@ -234,7 +237,7 @@ return [
 //add on
         'Form' =>Collective\Html\FormFacade::class,
         'Html' =>Collective\Html\HtmlFacade::class,
-        'Laratrust' =>Laratrust\LaratrustFacade::class,
+        
     ],
 
 ];
